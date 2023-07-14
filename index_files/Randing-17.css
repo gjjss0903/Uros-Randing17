@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #E6E6E6;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+#wrap {
+  width: 60%;
+  margin: auto;
+  background-color: #fff;
+  height: 100vh;
+}
+header img {
+  width: 100%;
+}
+/* 선택 폼 */
+.click {
+  position: relative;
+}
+.click img {
+  width: 100%;
+  margin-top: -5px;
+}
+.click-img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin-top: 20px;
+}
+.click-img img {
+  width: 28%;
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.click-img img.active {
+  background-color: #FFF74E;
+}
+.event img {
+  width: 100%;
+  margin-top: -5px;
+}
+/* 입력 폼 */
+.info {
+  width: 100%;
+  background-color: #121420;
+  margin-top: -5px;
+  position: relative;
+}
+.info-feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.info-feed input {
+  display: block;
+  width: 65%;
+  outline: none;
+  padding: 1.5vw;
+  padding-left: 15vw;
+  margin-top: 5px;
+  font-size: 2vw;
+  font-weight: bold;
+}
+input[type=text] {
+  background: url(../images/17-10.png) no-repeat center left 5% #fff;
+  background-size: 15%;
+}
+input[type=number] {
+  background: url(../images/17-11.png) no-repeat center left 5% #fff;
+  background-size: 15%;
+}
+input[type=tel] {
+  background: url(../images/17-12.png) no-repeat center left 5% #fff;
+  background-size: 15%;
+}
+.custom {
+  color: #fff;
+  width: 90%;
+  font-size: 1.3vw;
+  text-align: center;
+}
+#chk {
+  display: inline-block;
+  width: 5%;
+  vertical-align: middle;
+  margin-top: -2px;
+  height: 1.5vw;
+  cursor: pointer;
+}
+label[for=chk],
+.account {
+  cursor: pointer;
+}
+.account {
+  font-weight: bold;
+}
+/* 설명 폼 */
+.account-feed {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin: 50px;
+  width: 90%;
+  padding: 2vw;
+  box-sizing: border-box;
+  font-size: 1vw;
+  display: none;
+  font-size: 1vw;
+}
+.modal-click {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #eee;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+.personal {
+  position: relative;
+  position: absolute;
+  width: 90%;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 2vw;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+  display: none;
+  font-size: 1vw;
+  z-index: 2;
+  top: 32%;
+}
+.btn-x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 3vw;
+  cursor: pointer;
+}
+.click-feed img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  margin-top: 2.5vh;
+  cursor: pointer;
+}
+.up {
+  position: absolute;
+  font-size: 2vw;
+  background-color: #E1D9CE;
+  padding: 1vw 1vw;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  line-height: 1.5vw;
+  cursor: pointer;
+}
+.up a {
+  color: #121420;
+}
+/* ----------------------- */
+.slide {
+  background-image: linear-gradient(to top, #E1D9CE 50%, #121420 50%);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.slide-img {
+  display: flex;
+  overflow: hidden;
+}
+.slide-img img {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  animation: slide 15s infinite;
+}
+
+footer img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+/* ------- */
+@keyframes slide {
+  0% {right: 100%;}
+  25% {right: 200%;}
+  50% {right: 300%;}
+  75% {right: 400%;}
+  100% {right: 0%;}
+}
+@media (max-width:400px) {
+  #wrap {
+    width: 100%;
+  }
+  .info-feed input {
+    padding-left: 20vw;
+    font-size: 8vw;
+  }
+  #chk {
+    height: 3vw;
+  }
+  footer img {
+    
+  }
+}
